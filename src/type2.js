@@ -6,15 +6,15 @@ function type1_1() {
 
   if (Math.random() < 0.5) {
     if (Math.random() < 0.5) {
-      console.log(`( )+${b}=${a + b}`);
+      console.log(`(   )+${b}=${a + b}`);
     } else {
-      console.log(`${b}+( )=${a + b}`);
+      console.log(`${b}+(   )=${a + b}`);
     }
   } else {
     if (Math.random() < 0.5) {
-      console.log(`${a + b}-( )=${b}`);
+      console.log(`${a + b}-(   )=${b}`);
     } else {
-      console.log(`( )-${a}=${b}`);
+      console.log(`(   )-${a}=${b}`);
     }
   }
 }
@@ -30,9 +30,9 @@ function type1_2() {
       [c, d] = randSumIn10(a + b);
     }
     if (Math.random() < 0.5) {
-      console.log(`${a}+( )=${c}+${d}`);
+      console.log(`${a}+(   )=${c}+${d}`);
     } else {
-      console.log(`( )+${b}=${c}+${d}`);
+      console.log(`(   )+${b}=${c}+${d}`);
     }
   } else if (dice < 0.5) {
     let [val, d] = randSumIn10();
@@ -44,9 +44,9 @@ function type1_2() {
       [a, b] = randSumIn10(val);
     }
     if (Math.random() < 0.5) {
-      console.log(`${a}+( )=${c}-${d}`);
+      console.log(`${a}+(   )=${c}-${d}`);
     } else {
-      console.log(`( )+${b}=${c}-${d}`);
+      console.log(`(   )+${b}=${c}-${d}`);
     }
   } else if (dice < 0.75) {
     let [val, d] = randSumIn10();
@@ -58,9 +58,9 @@ function type1_2() {
       [a, b] = randSumIn10(val);
     }
     if (Math.random() < 0.5) {
-      console.log(`${c}-( )=${a}+${b}`);
+      console.log(`${c}-(   )=${a}+${b}`);
     } else {
-      console.log(`( )-${d}=${a}+${b}`);
+      console.log(`(   )-${d}=${a}+${b}`);
     }
   } else {
     const val = rand(6);
@@ -74,15 +74,15 @@ function type1_2() {
     const c = val + d;
 
     if (Math.random() < 0.5) {
-      console.log(`${a}-( )=${c}-${d}`);
+      console.log(`${a}-(   )=${c}-${d}`);
     } else {
-      console.log(`( )-${b}=${c}-${d}`);
+      console.log(`(   )-${b}=${c}-${d}`);
     }
   }
 }
 
 function generate() {
-  for (let i = 0; i < 50; i++) {
+  for (let i = 0; i < 25; i++) {
     if (Math.random() < 0.8) {
       type1_1();
     } else {

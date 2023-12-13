@@ -109,7 +109,7 @@ function type1_3() {
 }
 
 function generate() {
-  for (let i = 0; i < 50; i++) {
+  for (let i = 0; i < 25; i++) {
     const dice = Math.random();
     if (dice < 0.8) {
       type1_1();
