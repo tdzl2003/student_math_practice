@@ -1,0 +1,8 @@
+{
+  "name": "student_math_practice",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:tdzl2003/student_math_practice.git",
+  "author": "tdzl2003 <tdzl2003@gmail.com>",
+  "license": "MIT"
+}
